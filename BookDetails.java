@@ -36,7 +36,7 @@ public class BookDetails{
 
 		
 
-        System.out.println("  find Book by Pages");
+        System.out.println("  find Book");
         Book foundTitle = findbybooktitle("2 States");
         Book foundTitle1 = findbybooktitle("A Fine Balance");
         if (foundTitle != null) 
