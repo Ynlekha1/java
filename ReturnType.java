@@ -5,8 +5,8 @@ public class ReturnType{
      {
         char charReturn = getCharValue();
         System.out.println("The char value is: " + charReturn);
-
-
+                                   
+                                            
         int intReturn = getIntValue();
         System.out.println("The int value is: " + intReturn);
 

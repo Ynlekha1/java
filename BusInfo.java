@@ -12,8 +12,8 @@ public static void main (String [] args)
 	bus.BusNumber = 17;
 	bus.route = "statebank to kunjathbail";
 	bus.capacity = 50;
-	bus.type = "regular";
-	bus.currentPassengers = 30;
+	bus.type = "regular";                                                       
+	bus.currentPassengers = 30;                   
 
 
 	Bus bus1 = new Bus();
@@ -89,14 +89,6 @@ public static void main (String [] args)
 	bus9.currentPassengers = 35;
 
 
-
-
-
-
-
-
-
-
     System.out.println("-----------------------------------");
 	System.out.println("Bus number is :"+bus.BusNumber);
 	System.out.println("Route :"+bus.route);
@@ -110,7 +102,6 @@ public static void main (String [] args)
 	System.out.println("Capacity :"+bus1.capacity);
 	System.out.println("Type :"+bus1.type);
 	System.out.println("current passengers :"+bus1.currentPassengers);
-
 
 	System.out.println("-----------------------------------");
 	System.out.println("Bus number is :"+bus2.BusNumber);
@@ -126,9 +117,6 @@ public static void main (String [] args)
 	System.out.println("Type :"+bus3.type);
 	System.out.println("current passengers :"+bus3.currentPassengers);
 
-
-
-
 	System.out.println("-----------------------------------");
 	System.out.println("Bus number is :"+bus4.BusNumber);
 	System.out.println("Route :"+bus4.route);
@@ -136,14 +124,12 @@ public static void main (String [] args)
 	System.out.println("Type :"+bus4.type);
 	System.out.println("current passengers :"+bus4.currentPassengers);
 
-
 	System.out.println("-----------------------------------");
 	System.out.println("Bus number is :"+bus5.BusNumber);
 	System.out.println("Route :"+bus5.route);
 	System.out.println("Capacity :"+bus5.capacity);
 	System.out.println("Type :"+bus5.type);
 	System.out.println("current passengers :"+bus5.currentPassengers);
-
 
 	System.out.println("-----------------------------------");
 	System.out.println("Bus number is :"+bus6.BusNumber);

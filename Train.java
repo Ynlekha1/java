@@ -27,9 +27,10 @@ public class Train{
 	  {
 
 	  }
+	  
 
 
-	  public void displayTrainDetails() { // Changed to non-static
+	  public void displayTrainDetails() { 
         System.out.println("Train Number: " + trainNumber);
         System.out.println("Route: " + route);
         System.out.println("Capacity: " + capacity);

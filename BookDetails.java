@@ -6,7 +6,7 @@ public class BookDetails{
 	public static void main (String [] args)
 	{
 		Book book = new Book("Midnight's Children","Salman Rushdie",536,1986);
-		Book book1 = new Book("2 states","Chetan bhagat",100,2009);
+		Book book1 = new Book("2 States","Chetan bhagat",100,2009);
 		Book book2 = new Book("The God of Small Things","Arundhati Roy",200,1987);
 		Book book3 = new Book("A Fine Balance","Rohinton Mistry",170,2000);
 		Book book4 = new Book("The White Tiger","Aravind Adiga",180,2010);
@@ -25,7 +25,7 @@ public class BookDetails{
          saveBook(book7);
 
 
-
+        System.out.println("  to display book details");
 		for(int i=0;i<bookData.length;i++)
 		{
 			if(bookData[i]!=null)
@@ -34,8 +34,31 @@ public class BookDetails{
 			}
 		}
 
+		
 
-	}
+        System.out.println("-------------  find Book--------------");
+        Book foundTitle = findbybooktitle("2 States");
+        Book foundTitle1 = findbybooktitle("A Fine Balance");
+        if (foundTitle != null) 
+        {
+            foundTitle.BookDetails();
+            foundTitle1.BookDetails();
+        }
+
+
+
+        System.out.println("-----------Update Book Pages------------");
+        updatebookbypages("2 States", 120);
+        updatebookbypages("The White Tiger", 200);
+	    System.out.println("Updated Book Details");
+        for (int i = 0; i < bookData.length; i++) 
+        {
+            if (bookData[i] != null)
+             {
+                bookData[i].BookDetails();
+            }
+        }
+    }
 
 	public static boolean saveBook(Book book)
 	{
@@ -54,5 +77,42 @@ public class BookDetails{
             return false;
 	}
 
-	
+
+	public static Book findbybooktitle(String title )
+	{
+		for(int i = 0;i< bookData.length;i++)
+		{
+			if(bookData[i]!=null)
+			{
+              if(bookData[i].title.equals(title))
+              {
+                System.out.println("book found");
+                return bookData[i]; 
+              }
+
+			}
+
+		}
+	        System.out.println("book  not found");
+	        return null;
+	}
+
+	public static boolean updatebookbypages(String title,int pages)
+	{
+		for(int i =0;i <bookData.length;i++)
+		{
+			if(bookData[i]!=null)
+			{
+				if(bookData[i].title.equals(title))
+				{
+					bookData[i].pages=(pages);
+					System.out.println("updated pages");
+					return true;
+
+				}
+			}
+		}
+		System.out.println("not updated");
+    	return false;
+	}
 }
