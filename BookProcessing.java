@@ -30,6 +30,9 @@ public enum BookCondition {
 public enum Binding {
     HARDCOVER, PAPERBACK, SPIRAL;
 }
+public enum Audience {
+    CHILDREN, TEENS, ADULT, ALL_AGES;
+}
 
 
 
