@@ -1,39 +1,18 @@
-package com.java.acessspecifier;
+package com.java.encapsulation;
 
-public class BookRunner extends BookDetails {
-	
-	    
-	    public BookRunner(int orderId, String customerName, int totalAmount) {
-	        super(orderId, customerName, totalAmount);
-	    }
+public class BookRunner {
+    public static void main(String[] args) {
+        LibraryBook book = new LibraryBook("Effective Java", "Joshua Bloch", "Addison-Wesley", "978-0134685991", 3,
+                                           "LIB123", "Programming", "Shelf 5", 10, 5, "John Doe", "BR001", 
+                                           20231112, 20231212, 0.0, "English", "Programming", 416, false, true);
+        
+        
+        
+        
+        System.out.println("Title: " + book.getTitle());
+        System.out.println("Author: " + book.getAuthor());
+        System.out.println("Publisher: " + book.getPublisher());
+        
 
-	    public static void main(String[] args) {
-	       
-	        BookRunner runner = new BookRunner(001, "lekha", 250);
-	        
-	        runner.processOrder();
-	        runner.updateStatus();
-	        runner.calculateTotalAmount();
-	    }
-
-	    
-	    public void processOrder() {
-	        System.out.println("Processing order ID: " + orderId);
-	        calculateTotalAmount();
-	        updateStatus();
-	        System.out.println("Order status updated for order ID: " + orderId);
-	    }
-
-	   
-	    protected void calculateTotalAmount() {
-	        System.out.println("Checking payment for the order: " + orderId + " with payment method for amount: " + totalAmount);
-	    }
-
-	   
-	    void updateStatus() {
-	        System.out.println("Updating order status....");
-	    }
-	}
-
-
-
+    }
+}
