@@ -1,27 +1,23 @@
 package com.java.abstraction;
 
-public class Train extends Transport {
+public class Airplane extends Transport{
 
 	@Override
 	public void Transportstart() {
-		System.out.println("train get started");
+		System.out.println("Airplane is taking off");
 		
 	}
 
 	@Override
 	public void Transportstop() {
-		System.out.println("train stopped");
+		System.out.println("Airplane is landing");
 		
 	}
 
 	@Override
 	public void fuelType() {
-		System.out.println("fuel type is:Electric");
+		System.out.println("fuel type:jet fuel");
 		
 	}
-	
-	
-	
-	
 
 }

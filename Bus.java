@@ -1,25 +1,26 @@
-public class Bus{
+package com.java.abstraction;
 
-	int BusNumber;
-	String route;
-	int capacity;
-	String type;
-	int currentPassengers;
+public class Bus extends Transport {
+	
+	@Override
+	public  void  Transportstart() {
+		System.out.println("Bus is starting");
+	}
+	
+	@Override
+	public  void  Transportstop() {
+		System.out.println("bus got stopped");
+	}
 
-public static void start()
-{
 
-}
-public static void steering()
-{
+	@Override
+	public void fuelType() {
+		System.out.println("fuel type is: diesel");
+		
+	}
+	
+	
+	
+	
 
-}
-public static void acceleration()
-{
-
-}
-public static void brake()
-{
-
-}
 }
