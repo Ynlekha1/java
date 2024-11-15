@@ -1,19 +1,9 @@
-public class Car extends Vehicle{
-	 int doors;
+package com.java.TypeCasting;
 
-	public Car(String vehicleID,String model,String type,int speed,int doors)
-	{
-		super(vehicleID,model,type,speed);
-		this.doors=doors;
-
+public class Car extends Vehicle {
+    public void drive() 
+    {
+        System.out.println("Car drives:");
     }
-
-      public void displaycardetails()
-      {
-      	displayVehicleDetails();
-      	System.out.println("total doors:"+ doors );
-      }
-
-
 
 }

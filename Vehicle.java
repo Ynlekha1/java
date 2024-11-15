@@ -1,24 +1,8 @@
-public class Vehicle{
-	String vehicleID;
-	String model;
-	String type;
-	int speed;
+package com.java.TypeCasting;
 
+public class Vehicle {
+	public void start() {
+        System.out.println("Vehicle starts:");
+    }
 
-public Vehicle(String vehicleID,String model,String type,int speed)
-{
-	this.vehicleID=vehicleID;
-	this.model=model;
-	this.type=type;
-	this.speed=speed;
-}
-
-
-public void displayVehicleDetails()
-{
-	    System.out.println("Vehicle ID: " + vehicleID);
-        System.out.println("Model: " + model);
-        System.out.println("Type: " + type);
-        System.out.println("Speed: " + speed );
-}
 }
