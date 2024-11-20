@@ -1,30 +1,84 @@
+package com.java.crud.Entity;
+
 public class Book {
-	
-    String title;
-    String author;
-    int pages;
-    int publicationYear;
+	 private String title;
+	    private String author;
+	    private int price;
+	    private int pages;
+	    private int stock;
+	    
+	    
+	    
+	    public Book(String title, String author, int price, int pages, int stock) {
+	        this.title = title;
+	        this.author = author;
+	        this.price = price;
+	        this.pages = pages;
+	        this.stock = stock;
+	    }
 
 
-    public Book()
-    {
-    	System.out.println("no parmeterized constructor");
-    }
 
-    public Book (String title,String author,int pages,int publicationYear)
-    {
-    	this.title = title;
-    	this.author = author;
-    	this.pages = pages;
-    	this.publicationYear = publicationYear;
-    }
+		public String getTitle() {
+			return title;
+		}
 
-    public void BookDetails()
-    {
-    	System.out.println("Title : " + title);
-    	System.out.println("Author : " + author);
-    	System.out.println("Pages : " + pages);
-    	System.out.println("Publication Year : " + publicationYear);
-    	System.out.println();
-    }
+
+
+		public void setTitle(String title) {
+			this.title = title;
+		}
+
+
+
+		public String getAuthor() {
+			return author;
+		}
+
+
+
+		public void setAuthor(String author) {
+			this.author = author;
+		}
+
+
+
+		public int getPrice() {
+			return price;
+		}
+
+
+
+		public void setPrice(int price) {
+			this.price = price;
+		}
+
+
+
+		public int getPages() {
+			return pages;
+		}
+
+
+
+		public void setPages(int pages) {
+			this.pages = pages;
+		}
+
+
+
+		public int getStock() {
+			return stock;
+		}
+
+
+
+		public void setStock(int stock) {
+			this.stock = stock;
+		}
+	    
+	    
+	    
+	    
+	    
 }
