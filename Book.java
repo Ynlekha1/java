@@ -1,37 +1,65 @@
-package com.java.exceptions;
+package com.java.encapsulation;
 
 public class Book {
-	public static void main(String[] args) {
-		
-		String bookTitle = null;
-		
-		String Author = "YN Lekha";
-		
-		
-		
-	if(bookTitle!=null)
-	{
-		System.out.println("book title is" +bookTitle);
-		System.out.println("title length" +bookTitle.length());
-	}else
-	{
-		System.err.println("book titl is not available");
-	}
 	
-	
-	
-	if(Author!=null)
-	{
-		System.out.println(Author);
-		System.out.println("author length:" +Author.length());
-	}else
-	{
-		System.err.println("author name is missing");
-	}
-		
-		
-		
-		
-	}
+	private String title;
+    private String author;
+    private int pages;
+    private String genre;
+    private int price;
 
+    public Book() {
+        System.out.println("No argument");
+    }
+
+    // Setters
+    public void setTitle(String title){ 
+    	this.title = title;
+    	}
+    
+    public void setAuthor(String author){ 
+    	this.author = author; 
+    	}
+    
+    public void setPages(int pages){ 
+    	this.pages = pages; 
+    	}
+    
+    public void setGenre(String genre){
+    	this.genre = genre;
+    	}
+    
+    public void setPrice(int price){
+    	this.price = price; 
+    	}
+
+    // get
+    public String getTitle(){
+    	return title; 
+    	}
+    
+    public String getAuthor(){ 
+    	return author; 
+    	}
+    
+    public int getPages(){ 
+    	return pages; 
+    	}
+    
+    public String getGenre(){
+    	return genre; 
+    	}
+    
+    public double getPrice(){ 
+    	return price; 
+    	}
+    @Override
+    public String toString() {
+    	System.out.println("toString() invoke");
+    	return this.title+this.author+this.pages+this.genre+this.price;
+    }
+    
+    
 }
+
+
